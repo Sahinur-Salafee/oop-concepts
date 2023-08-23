@@ -3,7 +3,7 @@
 class Human {
     public $name;
     function sayHi() {
-        echo "Salaaam";
+        echo "Salam";
     }
 
     function sayName() {
