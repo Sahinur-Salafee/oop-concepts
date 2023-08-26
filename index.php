@@ -1,4 +1,6 @@
 <?php 
+include './rgb.php';
+die();
 class Human {
     public $name;
     public $age;
