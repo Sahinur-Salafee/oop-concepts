@@ -1,5 +1,4 @@
 <?php 
-
 class Human {
     public $name;
     public $age;
@@ -36,6 +35,7 @@ class Dog {
     }
 }
 
+// Setter
 $h1 = new Human('Salafee', 27);
 $h2 = new Human('John', 25);
 $h3 = new Human('Jack');
@@ -44,6 +44,7 @@ $h3 = new Human('Jack');
 $c1 = new Cat();
 $d1 = new Dog();
 
+// getter
 $h1->sayHi();
 // $h1->sayName(); // getname
 echo '<br>';
@@ -54,3 +55,5 @@ echo "<br>";
 $c1 -> sayHi();
 echo "<br>";
 $d1 -> sayHi();
+
+include './modifiers.php';
