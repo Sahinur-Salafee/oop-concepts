@@ -34,15 +34,15 @@ class RGB {
     }
 
     function getRed() {
-        echo $this->red;
+        echo 'Red Color:' . $this->red;
     }
     
     function getGreen() {
-        echo $this->green;
+        echo 'Green Color:'. $this->green;
     }
 
     function getBlue() {
-        echo $this->blue;
+        echo 'Blue Color: '. $this->blue;
     }
 
 }
@@ -50,5 +50,9 @@ class RGB {
 $myColor = new RGB('#1fb5ad');
 $myColor->readRGBColor();
 echo '<br>'; 
-$myColor->getBlue();
+$myColor->getRed();
 echo '<br>';
+$myColor->getGreen();
+echo '<br>';
+$myColor->getBlue();
+
