@@ -1,6 +1,6 @@
 <?php 
-include './rgb.php';
-die();
+include './inheritance.php';
+exit();
 class Human {
     public $name;
     public $age;
