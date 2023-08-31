@@ -1,5 +1,5 @@
 <?php 
-include './inheritance.php';
+include './class-scope.php';
 exit();
 class Human {
     public $name;
