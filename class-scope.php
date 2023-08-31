@@ -15,7 +15,7 @@ class ParentClass {
 class ChildClass extends ParentClass{
 
     function sayHi() {
-        // parent::sayHi();
+        parent::sayHi();
         echo "Hello! I am Child Class.<br>";
     }
 }
