@@ -11,7 +11,7 @@ class Shape {
     }
 
     public function getArea() {
-        echo "This {$this->name}'s area is {$this->area}";
+        echo "This {$this->name}'s area is {$this->area}<br>";
     }
 
     public function calculateArea() {}
@@ -31,7 +31,7 @@ class Triangle extends Shape {
 
     public function calculateArea()
     {
-        $perimeter = ($this->a+$this->b+$this->c)/2;
+        $perimeter = ($this->a+$this->b+$this->c)/2; // 7.5
         $this->area = sqrt($perimeter*($perimeter-$this->a)*($perimeter-$this->b)*($perimeter-$this->c));
     }
 }
@@ -50,3 +50,9 @@ class Rectangle extends Shape{
         $this->area = $this->a * $this->b;
     }
 }
+
+$r = new Rectangle(9,6);
+$r->getArea();
+
+$tr = new Triangle(10,12,8);
+$tr->getArea();
