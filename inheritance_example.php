@@ -35,3 +35,18 @@ class Triangle extends Shape {
         $this->area = sqrt($perimeter*($perimeter-$this->a)*($perimeter-$this->b)*($perimeter-$this->c));
     }
 }
+
+class Rectangle extends Shape{
+    private $a,$b;
+
+    public function __construct($a, $b)
+    {
+       $this->a = $a;
+       $this->b = $b;
+       parent::__construct('Rentangle');
+    }
+
+    public function calculateArea() {
+        $this->area = $this->a * $this->b;
+    }
+}
