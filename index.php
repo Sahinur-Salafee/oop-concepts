@@ -1,5 +1,5 @@
 <?php 
-include './inheritance_example.php';
+include './abstract.php';
 exit();
 class Human {
     public $name;
