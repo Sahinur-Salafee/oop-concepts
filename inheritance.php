@@ -1,5 +1,7 @@
 <?php
 
+use Rectangle as GlobalRectangle;
+
 class Animal {
 
     protected $name;
@@ -48,3 +50,44 @@ $horse1->greeting();
 $man1 = new Man('Rakib');
 $man1->sleep();
 $man1->sayHi();
+
+
+class Shape {
+
+}
+class Shapes {
+
+    private $shapes;
+
+    function __construct()
+    {
+        $this->shapes = array();
+    }
+
+    function addShape(Shape $shape) { // set if the shape type is Shape
+        array_push($this->shapes, $shape);
+    }
+
+    function totalShape() {
+        return count($this->shapes);
+    }
+}
+
+class Rectangle extends Shape {
+
+}
+
+class Triangle extends Shape {
+
+}
+
+class Peoples {
+
+}
+
+$shapeCollection = new Shapes();
+$shapeCollection->addShape(new Rectangle());
+$shapeCollection->addShape(new Triangle());
+// $shapeCollection->addShape(new Peoples());
+echo '<br>';
+echo $shapeCollection->totalShape();

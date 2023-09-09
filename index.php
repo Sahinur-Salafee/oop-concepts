@@ -1,2 +1,2 @@
 <?php 
-include './abstract.php';
+include './inheritance.php';
