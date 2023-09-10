@@ -35,6 +35,16 @@ interface classNineStudents {
     function studentsList();
 }
 
+class classNine implements classNineStudents {
+    function studentsList()
+    {
+        $student = ['Jamal','kamal','sajib'];
+        echo $student[0].'<br>';
+        echo $student[1].'<br>';
+        echo $student[2];
+    }
+}
+
 class higherSecondaryExaminee implements classTenStudents {
 
     function studentData(){}
@@ -46,3 +56,7 @@ class higherSecondaryExaminee implements classTenStudents {
 
 $student1 = new higherSecondaryExaminee();
 echo $student1 instanceof classNineStudents;
+
+$student2 = new classNine();
+echo $student2 instanceof classNine . '<br>';
+$student2->studentsList();
