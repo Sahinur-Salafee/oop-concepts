@@ -1,2 +1,2 @@
 <?php 
-include './inheritance.php';
+include './interface.php';
