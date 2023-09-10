@@ -31,6 +31,10 @@ interface classTenStudents extends School {
     function totalHigherExaminee();
 }
 
+interface classNineStudents {
+    function studentsList();
+}
+
 class higherSecondaryExaminee implements classTenStudents {
 
     function studentData(){}
@@ -41,4 +45,4 @@ class higherSecondaryExaminee implements classTenStudents {
 }
 
 $student1 = new higherSecondaryExaminee();
-echo $student1 instanceof higherSecondaryExaminee;
+echo $student1 instanceof classNineStudents;
