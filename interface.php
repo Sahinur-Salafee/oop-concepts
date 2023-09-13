@@ -71,3 +71,9 @@ class WPdev implements Arraytics {
     public function wordPressDev(){}
     public function frontendDev(){}
 }
+
+interface WpMet extends Arraytics {
+    public function wordPressDev();
+    public function frontendDev();
+}
+
