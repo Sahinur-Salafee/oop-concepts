@@ -77,3 +77,6 @@ interface WpMet extends Arraytics {
     public function frontendDev();
 }
 
+$dev1 = new WPdev();
+echo '<br>'. $dev1 instanceof Arraytics;
+
