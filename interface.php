@@ -60,3 +60,14 @@ echo $student1 instanceof classNineStudents;
 $student2 = new classNine();
 echo $student2 instanceof classNine . '<br>';
 $student2->studentsList();
+
+interface Arraytics {
+
+    public function wordPressDev();
+    public function frontendDev();
+}
+
+class WPdev implements Arraytics {
+    public function wordPressDev(){}
+    public function frontendDev(){}
+}
