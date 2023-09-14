@@ -1,8 +1,14 @@
 <?php
 class MathCalculator {
 
+    function __construct($name)
+    {
+        $this->name = $name;
+    }
+
     static $name;  // static property
     private $age;
+    public $job;
 
     static function fibonacci($n) {
         self::$name = 'John'; // call static property
@@ -15,13 +21,14 @@ class MathCalculator {
     }
 
     function factorial($n) {
+        $this->job = 'Developer';
         self::$name = 'deo';
         $this->age = 30;
         echo "Calculate factorial for {$n} <br>";
     }
 }
 
-$n1 = new MathCalculator();
+$n1 = new MathCalculator('Mahbub');
 $n1->factorial(20);
 //$n1->fibonacci(10);
 
