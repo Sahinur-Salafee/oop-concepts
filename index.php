@@ -1,2 +1,2 @@
 <?php 
-include './interface.php';
+include './static-method.php';
