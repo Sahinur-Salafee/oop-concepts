@@ -49,3 +49,28 @@ class B extends A {
 }
 
 B::sayHi();
+
+// constant in Class
+define('A',10);
+echo A;
+echo '<br>';
+const City = 'Dhaka';
+echo City;
+echo '<br>';
+
+// In a class the constant variable is always in static scope
+class X {
+    const name = 'Salafee';
+
+    function sayHi() {
+        echo 'Hi '. self::name; // static scope
+        // echo 'Hi '. $this::name; 
+    }
+}
+
+$m1 = new X();
+echo $m1::name;
+echo '<br>';
+$m1->sayHi();
+echo '<br>';
+echo X::name; // call like static property because it is in static scope
