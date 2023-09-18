@@ -1,11 +1,6 @@
 <?php
 class MathCalculator {
 
-    function __construct($name)
-    {
-        $this->name = $name;
-    }
-
     static $name;  // static property
     private $age;
     public $job;
@@ -22,7 +17,6 @@ class MathCalculator {
 
     function factorial($n) {
         $this->job = 'Developer';
-        self::$name = 'deo';
         $this->age = 30;
         echo "Calculate factorial for {$n} <br>";
     }
@@ -34,4 +28,21 @@ $n1->factorial(20);
 
 // don't need to instantiate the new object
 MathCalculator::fibonacci(27);
-echo MathCalculator::$name;
+echo MathCalculator::$name . '<br>';
+
+// Static method overriding
+
+class A {
+    static function sayHi() {
+        echo 'Hi from A <br>';
+    }
+}
+
+class B extends A {
+    static function sayHi() {
+        echo 'Hi from B <br>';
+        parent::sayHi();
+    }
+}
+
+b::sayHi();
