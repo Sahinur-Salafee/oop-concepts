@@ -33,16 +33,19 @@ echo MathCalculator::$name . '<br>';
 // Static method overriding
 
 class A {
+    protected static $name;
     static function sayHi() {
+        echo self::$name = 'Hello<br>';
         echo 'Hi from A <br>';
     }
 }
 
 class B extends A {
     static function sayHi() {
+        echo self::$name = 'Hay<br>';
         echo 'Hi from B <br>';
         parent::sayHi();
     }
 }
 
-b::sayHi();
+B::sayHi();
