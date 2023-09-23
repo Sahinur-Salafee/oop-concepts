@@ -17,6 +17,11 @@ class Student {
         return $this->$prop . '<br>';
     }
 
+    public function __set($prop, $value)
+    {
+        $this->$prop = $value;
+    }
+
     // function getName() {
     //     echo $this->name . '<br>';
     // }
@@ -45,15 +50,25 @@ class Student {
 }
 
 $student1 = new Student('Salafee',28,'HSC');
+// get values
 echo $student1->name;
 echo $student1->age;
 echo $student1->class;
+
+// set values
+$student1->name = 'Wania';
+echo $student1->name;
+$student1->age = 3;
+echo $student1->age;
+$student1->class = 'One';
+echo $student1->class;
+
 // $student1->getName();
 // $student1->getAge();
 // $student1->getClass();
-// $student2->setName('Wania');
-// $student2->setAge(3);
-// $student2->setClass('One');
-// $student2->getName();
-// $student2->getAge();
-// $student2->getClass();
+// $student1->setName('Wania');
+// $student1->setAge(3);
+// $student1->setClass('One');
+// $student1->getName();
+// $student1->getAge();
+// $student1->getClass();
