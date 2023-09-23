@@ -12,38 +12,48 @@ class Student {
         $this->class = $class;
     }
 
-    function getName() {
-        echo $this->name . '<br>';
+    public function __get($prop)
+    {
+        return $this->$prop . '<br>';
     }
 
-    function setName($name) {
-        $this->name = $name;
-    }
+    // function getName() {
+    //     echo $this->name . '<br>';
+    // }
 
-    function getAge() {
-        echo $this->age . '<br>';
-    }
+    // function setName($name) {
+    //     $this->name = $name;
+    // }
 
-    function setAge($age) {
-        $this->age = $age;
-    }
+    // function getAge() {
+    //     echo $this->age . '<br>';
+    // }
 
-    function getClass() {
-        echo $this->class . '<br>';
-    }
+    // function setAge($age) {
+    //     $this->age = $age;
+    // }
 
-    function setClass($class) {
-        $this->class = $class;
-    }
+    // function getClass() {
+    //     echo $this->class . '<br>';
+    // }
+
+    // function setClass($class) {
+    //     $this->class = $class;
+    // }
+
+
 }
 
 $student1 = new Student('Salafee',28,'HSC');
-$student1->getName();
-$student1->getAge();
-$student1->getClass();
-$student1->setName('Wania');
-$student1->setAge(3);
-$student1->setClass('One');
-$student1->getName();
-$student1->getAge();
-$student1->getClass();
+echo $student1->name;
+echo $student1->age;
+echo $student1->class;
+// $student1->getName();
+// $student1->getAge();
+// $student1->getClass();
+// $student2->setName('Wania');
+// $student2->setAge(3);
+// $student2->setClass('One');
+// $student2->getName();
+// $student2->getAge();
+// $student2->getClass();
