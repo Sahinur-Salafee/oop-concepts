@@ -1,2 +1,2 @@
 <?php 
-include './static-method.php';
+include './magic_methods.php';
