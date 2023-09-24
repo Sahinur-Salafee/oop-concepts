@@ -1,2 +1,2 @@
 <?php 
-include './magic_methods.php';
+include './interface_example.php';
