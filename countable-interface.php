@@ -1,7 +1,7 @@
 <?php
 /** 
- * District collection class
- * return type Array 
+ * Multiple interface 
+ * return type number
  */
 class districtCollection implements IteratorAggregate, Countable {
 
