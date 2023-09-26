@@ -2,19 +2,7 @@
 
 // Object cloning is a very important feature in PHP OOP for working a large scale project.
 
-class MyColor {
-
-    public $color;
-
-    function __construct($color)
-    {
-        $this->color = $color;
-    }
-
-    function setColor($color) {
-        $this->color = $color;
-    }
-}
+c
 
 class FavColor {
 
