@@ -1,2 +1,2 @@
 <?php 
-include './object-to-string.php';
+include './object-comparing.php';
