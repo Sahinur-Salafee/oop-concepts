@@ -4,7 +4,7 @@ class Planet {
     
     static function echoName() {
         // echo self::getName();
-        echo static::getName();
+        echo static::getName(); // late static binding
     }
 
     static function getName() {
