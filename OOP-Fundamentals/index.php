@@ -1,2 +1,2 @@
 <?php 
-include './object-comparing.php';
+include './early-late-binding.php';
