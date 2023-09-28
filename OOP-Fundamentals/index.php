@@ -1,2 +1,2 @@
 <?php 
-include './early-late-binding.php';
+include './property-overloading.php';
