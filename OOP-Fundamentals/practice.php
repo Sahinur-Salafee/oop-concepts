@@ -8,23 +8,25 @@ class Student {
 
     function __construct($id,$name,$class)
     {
-        $this->id = $id;
-        $this->name = $name;
-        $this->class = $class;
+        self::$id= $id;
+        self::$name = $name;
+        self::$class = $class;
     }
 
-    function getTheId() {
-        return $this->id;
+    static function getTheId() {
+        return self::$id . '<br>';
     }
 
-    function getTheName() {
-        return $this->name;
+    static function getTheName() {
+        return self::$name . '<br>';
     }
     
-    function getTheClass() {
-        return $this->class;
+    static function getTheClass() {
+        return self::$class . '<br>';
     }
 }
 
-// $rahim = new Student('01','Rahim','Five');
+$rahim = new Student('01','Rahim','Five');
 echo $rahim::getTheId();
+echo Student::getTheName();
+echo Student::getTheClass();
