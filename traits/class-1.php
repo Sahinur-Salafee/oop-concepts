@@ -1,28 +1,35 @@
 <?php 
 trait NumberSeriesOne {
 
-    function numberSeriesA() {
-        echo "This is number series A";
+    private function numberSeriesA() {
+        echo "This is number series A <br>";
     }
 
     function numberSeriesB() {
-        echo "This is number series B";
+        $this->numberSeriesA();
+        echo "This is number series B <br>";
     }
 }
 
 trait NumberSeriesTwo {
+
+    use NumberSeriesOne; // One trait can use another trait
+
     function numberSeriesC() {
-        echo "This is number series C";
+        echo "This is number series C <br>";
     }
 
     function numberSeriesD() {
-        echo "This is number series D";
+        echo "This is number series D <br>";
     }
 }
 
 class NumberSeries {
-    use NumberSeriesOne;
+    use NumberSeriesTwo; // class can use multiple trait
 }
 
-$n = new NumberSeries();
-$n->numberSeriesB();
+$ns = new NumberSeries();
+// $ns->numberSeriesA();
+$ns->numberSeriesB();
+$ns->numberSeriesC();
+$ns->numberSeriesD();
