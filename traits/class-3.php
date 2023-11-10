@@ -1,8 +1,6 @@
 <?php
 // abstract and static methods in traits
 
-use MyClass as GlobalMyClass;
-
 trait MyTrait {
 
     static $number = 2;
